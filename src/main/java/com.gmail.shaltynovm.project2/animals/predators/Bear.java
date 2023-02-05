@@ -3,21 +3,21 @@ package com.gmail.shaltynovm.project2.animals.predators;
 import com.gmail.shaltynovm.project2.animals.Animal;
 import com.gmail.shaltynovm.project2.animals.Predators;
 import com.gmail.shaltynovm.project2.field.Cell;
-import com.gmail.shaltynovm.project2.field.InitialField;
+import com.gmail.shaltynovm.project2.field.FieldInitialization;
 
 import java.util.HashMap;
 import java.util.Map;
 
 public class Bear extends Predators {
-    public Bear(InitialField initialField, int energyCapacity,int givenEnergyIfEaten ) {
-        super(initialField);
+    public Bear(FieldInitialization fieldInitialization, int energyCapacity, int givenEnergyIfEaten ) {
+        super(fieldInitialization);
         this.energyCapacity = energyCapacity;
         this.givenEnergyIfEaten = givenEnergyIfEaten;
     }
 
     @Override
-    public Animal getNewAnimal(InitialField initialField) {
-        return new Bear(initialField,5,5);
+    public Animal getNewAnimal(FieldInitialization fieldInitialization) {
+        return new Bear(fieldInitialization,5,5);
     }
 
     private int energyCapacity;

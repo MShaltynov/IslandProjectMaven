@@ -1,7 +1,7 @@
 package com.gmail.shaltynovm.project2.animals;
 
 import com.gmail.shaltynovm.project2.field.Cell;
-import com.gmail.shaltynovm.project2.field.InitialField;
+import com.gmail.shaltynovm.project2.field.FieldInitialization;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -26,12 +26,12 @@ public abstract class Animal {
 
     public abstract int getGivenEnergyIfEaten();
 
-    public abstract Animal getNewAnimal(InitialField initialField);
+    public abstract Animal getNewAnimal(FieldInitialization fieldInitialization);
 
-    InitialField initialField;
+    FieldInitialization fieldInitialization;
 
-    public Animal(InitialField initialField) {
-        this.initialField = initialField;
+    public Animal(FieldInitialization fieldInitialization) {
+        this.fieldInitialization = fieldInitialization;
     }
 
     public void move(int distance) {
@@ -67,13 +67,13 @@ public abstract class Animal {
                 return yPosition - 1 >= 0;
             }
             case DOWN -> {
-                return yPosition + 1 < initialField.getIsland().yDimension;
+                return yPosition + 1 < fieldInitialization.getIsland().yDimension;
             }
             case LEFT -> {
                 return xPosition - 1 >= 0;
             }
             case RIGHT -> {
-                return xPosition + 1 < initialField.getIsland().xDimension;
+                return xPosition + 1 < fieldInitialization.getIsland().xDimension;
             }
             default -> throw new IllegalArgumentException("IllegalAccessException");
         }
@@ -100,7 +100,7 @@ public abstract class Animal {
                 newY = getPosition().y;
             }
         }
-        Cell newCell = initialField.getIsland().islandGrid[newX][newY];
+        Cell newCell = fieldInitialization.getIsland().islandGrid[newX][newY];
 
         removeAnimal(this);
         this.setPosition(newCell);
@@ -116,9 +116,9 @@ public abstract class Animal {
     }
 
     public boolean eatingProcess() {
-        for (int x = 0; x < initialField.getIsland().xDimension; x++) {
-            for (int y = 0; y < initialField.getIsland().yDimension; y++) {
-                List<Animal> victimList = initialField.getIsland().islandGrid[x][y].getAnimalList();
+        for (int x = 0; x < fieldInitialization.getIsland().xDimension; x++) {
+            for (int y = 0; y < fieldInitialization.getIsland().yDimension; y++) {
+                List<Animal> victimList = fieldInitialization.getIsland().islandGrid[x][y].getAnimalList();
                 if (findVictim(victimList)) {
                     return true;
                 }
@@ -130,7 +130,7 @@ public abstract class Animal {
     private void swallow(Animal actualAnimal) {
         int actualEnergyEaten = actualAnimal.getGivenEnergyIfEaten();
         int newEnergy = this.getEnergyCapacity() + actualEnergyEaten;
-        int maxEnergy = initialField.getDataFromTXT(actualAnimal.toString(), 3);
+        int maxEnergy = fieldInitialization.getAnimalConfig().getDataFromTXT(actualAnimal.toString(), 3);
         if (newEnergy > maxEnergy) {
             setEnergyCapacity(maxEnergy);
         } else {
@@ -146,7 +146,7 @@ public abstract class Animal {
                         swallow(this);
                         //System.out.println("Animal " + getIcon() + " has ate " + actualAnimal.getIcon());
                         if (!actualAnimal.getClass().equals(Grass.class)) {
-                            initialField.addEatenAnimals(actualAnimal);
+                            fieldInitialization.getGameRender().addEatenAnimals(actualAnimal);
                             Cell findPosition = actualAnimal.getPosition();
                             findPosition.removeAnimal(actualAnimal);
                             growGrass(findPosition);
@@ -170,7 +170,7 @@ public abstract class Animal {
             }
         }
         if (!findGrass) {
-            Animal newAnimal = new Grass(initialField, 10, 10);
+            Animal newAnimal = new Grass(fieldInitialization, 10, 10);
             position.addAnimal(newAnimal);
             newAnimal.setPosition(position);
         }
@@ -198,7 +198,7 @@ public abstract class Animal {
     }
 
     public Animal breed(Cell position) {
-        Animal newAnimal = getNewAnimal(initialField);
+        Animal newAnimal = getNewAnimal(fieldInitialization);
         position.addAnimal(newAnimal);
         newAnimal.setPosition(position);
         newAnimal.setBreedableStatus(false);

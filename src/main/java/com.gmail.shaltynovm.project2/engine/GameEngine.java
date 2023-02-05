@@ -1,7 +1,7 @@
 package com.gmail.shaltynovm.project2.engine;
 
 import com.gmail.shaltynovm.project2.animals.Animal;
-import com.gmail.shaltynovm.project2.field.InitialField;
+import com.gmail.shaltynovm.project2.field.FieldInitialization;
 import com.gmail.shaltynovm.project2.field.Island;
 import com.gmail.shaltynovm.project2.render.GameRender;
 
@@ -13,17 +13,21 @@ public class GameEngine {
     private GameRender gameRender;
     Island island;
     int dayNumber = 1;
-    InitialField initialField;
+    FieldInitialization fieldInitialization;
+
+    public GameRender getGameRender() {
+        return gameRender;
+    }
 
     public GameEngine(int delay, Island island, GameRender gameRender) {
         this.delay = delay;
         this.island = island;
+        fieldInitialization = new FieldInitialization(island,gameRender);
         this.gameRender = gameRender;
-        initialField = new InitialField(island);
     }
 
     public void start() {
-        initialField.populateIsland(island);
+        fieldInitialization.populateIsland(island);
         System.out.println("===============================================================================");
         System.out.println("Initial map. Animal amount= " + gameRender.getTotalAmount(island));
         gameRender.printMap(island);
@@ -45,29 +49,23 @@ public class GameEngine {
     }
 
     private void nextDay() {
-        long startTime = System.currentTimeMillis();
         List<Animal> newAnimals = new ArrayList<>();
         for (Animal currentAnimal : island.getAllAnimals()
         ) {
-            currentAnimal.move(initialField.getSpeedFromString(currentAnimal));
+            currentAnimal.move(fieldInitialization.getAnimalConfig().getSpeedFromString(currentAnimal));
             currentAnimal.eat();
             currentAnimal.checkEnergy();
-            int maxEnergy = initialField.getDataFromTXT(currentAnimal.toString(), 3);
-            boolean chanceToAppear = initialField.calculateChanceToEmerge(initialField.getDataFromTXT(currentAnimal.toString(), 1));
+            int maxEnergy = fieldInitialization.getAnimalConfig().getDataFromTXT(currentAnimal.toString(), 3);
+            boolean chanceToAppear = fieldInitialization.getAnimalConfig().calculateChanceToEmerge(fieldInitialization.getAnimalConfig().getDataFromTXT(currentAnimal.toString(), 1));
             newAnimals.addAll(currentAnimal.breedingProcess(chanceToAppear, maxEnergy));
         }
-        System.out.print("\uD83D\uDC76New com.gmail.shaltynovm.project2.animals: ");
+        System.out.print("\uD83D\uDC76New animals: ");
         System.out.print(newAnimals.size() + "pcs: ");
         newAnimals.forEach(animal -> {
             System.out.print(animal.getIcon());
         });
-        System.out.println("\nMoving and eating time: " + (System.currentTimeMillis() - startTime) + "ms");
-
-        initialField.printEatenAnimals();
-        //initialField.breed();
-        startTime = System.currentTimeMillis();
-        initialField.consumeEnergy();
-        System.out.println("Set energy after day time: " + (System.currentTimeMillis() - startTime) + "ms");
+        gameRender.printEatenAnimals();
+        fieldInitialization.getActivity().consumeEnergy();
     }
 
 

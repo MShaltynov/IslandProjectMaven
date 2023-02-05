@@ -1,7 +1,7 @@
 package com.gmail.shaltynovm.project2.animals;
 
 import com.gmail.shaltynovm.project2.field.Cell;
-import com.gmail.shaltynovm.project2.field.InitialField;
+import com.gmail.shaltynovm.project2.field.FieldInitialization;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -11,8 +11,8 @@ public class Grass extends Animal {
     private int givenEnergyIfEaten;
     private int energyCapacity;
 
-    public Grass(InitialField initialField, int energyCapacity, int givenEnergyIfEaten) {
-        super(initialField);
+    public Grass(FieldInitialization fieldInitialization, int energyCapacity, int givenEnergyIfEaten) {
+        super(fieldInitialization);
         this.energyCapacity = energyCapacity;
         this.givenEnergyIfEaten = givenEnergyIfEaten;
     }
@@ -48,7 +48,7 @@ public class Grass extends Animal {
     }
 
     @Override
-    public Animal getNewAnimal(InitialField initialField) {
+    public Animal getNewAnimal(FieldInitialization fieldInitialization) {
         return null;
     }
 

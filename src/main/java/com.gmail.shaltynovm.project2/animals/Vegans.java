@@ -1,7 +1,7 @@
 package com.gmail.shaltynovm.project2.animals;
 
 import com.gmail.shaltynovm.project2.field.Cell;
-import com.gmail.shaltynovm.project2.field.InitialField;
+import com.gmail.shaltynovm.project2.field.FieldInitialization;
 
 import java.util.Map;
 
@@ -26,12 +26,12 @@ public abstract class Vegans extends Animal {
     }
 
     @Override
-    public abstract Animal getNewAnimal(InitialField initialField);
+    public abstract Animal getNewAnimal(FieldInitialization fieldInitialization);
 
     private Cell position;
 
-    public Vegans(InitialField initialField) {
-        super(initialField);
+    public Vegans(FieldInitialization fieldInitialization) {
+        super(fieldInitialization);
     }
 
     @Override

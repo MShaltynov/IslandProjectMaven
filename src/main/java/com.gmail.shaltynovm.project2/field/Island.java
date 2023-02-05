@@ -1,10 +1,12 @@
 package com.gmail.shaltynovm.project2.field;
 
+import activities.Activity;
 import com.gmail.shaltynovm.project2.animals.Animal;
 
 import java.util.ArrayList;
 
 public class Island {
+
     public Cell[][] islandGrid;
     public final int xDimension;
     public final int yDimension;

@@ -3,14 +3,14 @@ package com.gmail.shaltynovm.project2.animals.predators;
 import com.gmail.shaltynovm.project2.animals.Animal;
 import com.gmail.shaltynovm.project2.animals.Predators;
 import com.gmail.shaltynovm.project2.field.Cell;
-import com.gmail.shaltynovm.project2.field.InitialField;
+import com.gmail.shaltynovm.project2.field.FieldInitialization;
 
 import java.util.HashMap;
 import java.util.Map;
 
 public class Eagle extends Predators {
-    public Eagle(InitialField initialField, int energyCapacity,int givenEnergyIfEaten) {
-        super(initialField);
+    public Eagle(FieldInitialization fieldInitialization, int energyCapacity, int givenEnergyIfEaten) {
+        super(fieldInitialization);
         this.energyCapacity = energyCapacity;
         this.givenEnergyIfEaten = givenEnergyIfEaten;
     }
@@ -26,8 +26,8 @@ public class Eagle extends Predators {
         this.breedableStatus = breedableStatus;
     }
     @Override
-    public Animal getNewAnimal(InitialField initialField) {
-        return new Eagle(initialField,5,5);
+    public Animal getNewAnimal(FieldInitialization fieldInitialization) {
+        return new Eagle(fieldInitialization,5,5);
     }
     private int energyCapacity;
 

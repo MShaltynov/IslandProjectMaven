@@ -1,7 +1,7 @@
 package com.gmail.shaltynovm.project2.animals;
 
 import com.gmail.shaltynovm.project2.field.Cell;
-import com.gmail.shaltynovm.project2.field.InitialField;
+import com.gmail.shaltynovm.project2.field.FieldInitialization;
 
 import java.util.Map;
 
@@ -21,8 +21,8 @@ public abstract class Predators extends Animal{
     public void setEnergyCapacity(int energyCapacity) {
         this.energyCapacity = energyCapacity;
     }
-    public Predators(InitialField initialField) {
-        super(initialField);
+    public Predators(FieldInitialization fieldInitialization) {
+        super(fieldInitialization);
     }
 
     @Override
@@ -31,7 +31,7 @@ public abstract class Predators extends Animal{
     }
 
     @Override
-    public abstract Animal getNewAnimal(InitialField initialField);
+    public abstract Animal getNewAnimal(FieldInitialization fieldInitialization);
 
     @Override
     public Cell getPosition() {

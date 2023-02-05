@@ -3,20 +3,20 @@ package com.gmail.shaltynovm.project2.animals.vegans;
 import com.gmail.shaltynovm.project2.animals.Animal;
 import com.gmail.shaltynovm.project2.animals.Vegans;
 import com.gmail.shaltynovm.project2.field.Cell;
-import com.gmail.shaltynovm.project2.field.InitialField;
+import com.gmail.shaltynovm.project2.field.FieldInitialization;
 
 import java.util.HashMap;
 import java.util.Map;
 
 public class Deer extends Vegans {
-    public Deer(InitialField initialField, int energyCapacity,int givenEnergyIfEaten) {
-        super(initialField);
+    public Deer(FieldInitialization fieldInitialization, int energyCapacity, int givenEnergyIfEaten) {
+        super(fieldInitialization);
         this.energyCapacity = energyCapacity;
         this.givenEnergyIfEaten = givenEnergyIfEaten;
     }
     @Override
-    public Animal getNewAnimal(InitialField initialField) {
-        return new Deer(initialField,5,5);
+    public Animal getNewAnimal(FieldInitialization fieldInitialization) {
+        return new Deer(fieldInitialization,5,5);
     }
     private int givenEnergyIfEaten;
     private boolean breedableStatus = true;
