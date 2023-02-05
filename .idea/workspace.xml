@@ -4,33 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b7cdece9-9c5d-4542-9b92-30da18b00fe2" name="Changes" comment="Commit after building">
-      <change afterPath="$PROJECT_DIR$/src/main/java/activities/Activity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/config/AnimalConfig.java" afterDir="false" />
+    <list default="true" id="b7cdece9-9c5d-4542-9b92-30da18b00fe2" name="Changes" comment="Changed FieldInitialization.java and created AnimalConfig.java">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com.gmail.shaltynovm.project2/animals/Animal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com.gmail.shaltynovm.project2/animals/Animal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com.gmail.shaltynovm.project2/animals/Grass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com.gmail.shaltynovm.project2/animals/Grass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com.gmail.shaltynovm.project2/animals/Predators.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com.gmail.shaltynovm.project2/animals/Predators.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com.gmail.shaltynovm.project2/animals/Vegans.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com.gmail.shaltynovm.project2/animals/Vegans.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com.gmail.shaltynovm.project2/animals/predators/Bear.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com.gmail.shaltynovm.project2/animals/predators/Bear.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com.gmail.shaltynovm.project2/animals/predators/Eagle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com.gmail.shaltynovm.project2/animals/predators/Eagle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com.gmail.shaltynovm.project2/animals/predators/Fox.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com.gmail.shaltynovm.project2/animals/predators/Fox.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com.gmail.shaltynovm.project2/animals/predators/Snake.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com.gmail.shaltynovm.project2/animals/predators/Snake.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com.gmail.shaltynovm.project2/animals/predators/Wolf.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com.gmail.shaltynovm.project2/animals/predators/Wolf.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com.gmail.shaltynovm.project2/animals/vegans/Boar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com.gmail.shaltynovm.project2/animals/vegans/Boar.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com.gmail.shaltynovm.project2/animals/vegans/Buffalo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com.gmail.shaltynovm.project2/animals/vegans/Buffalo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com.gmail.shaltynovm.project2/animals/vegans/Caterpillar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com.gmail.shaltynovm.project2/animals/vegans/Caterpillar.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com.gmail.shaltynovm.project2/animals/vegans/Deer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com.gmail.shaltynovm.project2/animals/vegans/Deer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com.gmail.shaltynovm.project2/animals/vegans/Duck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com.gmail.shaltynovm.project2/animals/vegans/Duck.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com.gmail.shaltynovm.project2/animals/vegans/Goat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com.gmail.shaltynovm.project2/animals/vegans/Goat.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com.gmail.shaltynovm.project2/animals/vegans/Horse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com.gmail.shaltynovm.project2/animals/vegans/Horse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com.gmail.shaltynovm.project2/animals/vegans/Mouse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com.gmail.shaltynovm.project2/animals/vegans/Mouse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com.gmail.shaltynovm.project2/animals/vegans/Rabbit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com.gmail.shaltynovm.project2/animals/vegans/Rabbit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com.gmail.shaltynovm.project2/animals/vegans/Sheep.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com.gmail.shaltynovm.project2/animals/vegans/Sheep.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com.gmail.shaltynovm.project2/engine/GameEngine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com.gmail.shaltynovm.project2/engine/GameEngine.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com.gmail.shaltynovm.project2/field/InitialField.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com.gmail.shaltynovm.project2/field/FieldInitialization.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com.gmail.shaltynovm.project2/field/Island.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com.gmail.shaltynovm.project2/field/Island.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com.gmail.shaltynovm.project2/render/GameRender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com.gmail.shaltynovm.project2/render/GameRender.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/config/AnimalConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/config/AnimalConfig.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,7 +92,7 @@
       <option name="presentableId" value="Default" />
       <updated>1675615591538</updated>
       <workItem from="1675615592722" duration="1084000" />
-      <workItem from="1675616718253" duration="4397000" />
+      <workItem from="1675616718253" duration="4714000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1675615638219</created>
@@ -139,7 +115,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675616226991</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Changed FieldInitialization.java and created AnimalConfig.java">
+      <created>1675621353440</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1675621353440</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -159,7 +142,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit" />
     <MESSAGE value="Commit after building" />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit after building" />
+    <MESSAGE value="Changed FieldInitialization.java and created AnimalConfig.java" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changed FieldInitialization.java and created AnimalConfig.java" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -168,11 +152,6 @@
           <url>file://$PROJECT_DIR$/src/main/java/activities/Activity.java</url>
           <line>11</line>
           <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com.gmail.shaltynovm.project2/engine/GameEngine.java</url>
-          <line>29</line>
-          <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com.gmail.shaltynovm.project2/engine/GameEngine.java</url>

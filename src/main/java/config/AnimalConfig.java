@@ -2,7 +2,6 @@ package config;
 
 import com.gmail.shaltynovm.project2.animals.Animal;
 import com.gmail.shaltynovm.project2.field.FieldInitialization;
-
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;

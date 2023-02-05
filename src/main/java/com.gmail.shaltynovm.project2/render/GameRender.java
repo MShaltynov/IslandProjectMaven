@@ -65,7 +65,7 @@ public class GameRender {
         return animalCount;
     }
     public void printEatenAnimals() {
-        System.out.print("\uD83C\uDF57Eaten  animals: ");
+        System.out.print("\n\uD83C\uDF57Eaten  animals: ");
         System.out.print(eatenAnimals.size() + "pcs: ");
         for (Animal animal : eatenAnimals
         ) {
