@@ -4,11 +4,46 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b7cdece9-9c5d-4542-9b92-30da18b00fe2" name="Changes" comment="" />
+    <list default="true" id="b7cdece9-9c5d-4542-9b92-30da18b00fe2" name="Changes" comment="Initial commit">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com.gmail.shaltynovm.project2/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com.gmail.shaltynovm.project2/animals/Animal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com.gmail.shaltynovm.project2/animals/Direction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com.gmail.shaltynovm.project2/animals/Grass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com.gmail.shaltynovm.project2/animals/Predators.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com.gmail.shaltynovm.project2/animals/Vegans.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com.gmail.shaltynovm.project2/animals/predators/Bear.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com.gmail.shaltynovm.project2/animals/predators/Eagle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com.gmail.shaltynovm.project2/animals/predators/Fox.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com.gmail.shaltynovm.project2/animals/predators/Snake.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com.gmail.shaltynovm.project2/animals/predators/Wolf.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com.gmail.shaltynovm.project2/animals/vegans/Boar.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com.gmail.shaltynovm.project2/animals/vegans/Buffalo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com.gmail.shaltynovm.project2/animals/vegans/Caterpillar.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com.gmail.shaltynovm.project2/animals/vegans/Deer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com.gmail.shaltynovm.project2/animals/vegans/Duck.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com.gmail.shaltynovm.project2/animals/vegans/Goat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com.gmail.shaltynovm.project2/animals/vegans/Horse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com.gmail.shaltynovm.project2/animals/vegans/Mouse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com.gmail.shaltynovm.project2/animals/vegans/Rabbit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com.gmail.shaltynovm.project2/animals/vegans/Sheep.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com.gmail.shaltynovm.project2/engine/GameEngine.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com.gmail.shaltynovm.project2/field/Cell.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com.gmail.shaltynovm.project2/field/InitialField.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com.gmail.shaltynovm.project2/field/Island.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com.gmail.shaltynovm.project2/render/GameRender.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/animalBase.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
@@ -27,10 +62,37 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/JavaRush/IslandProjectMaven/IslandProjectMaven/src/main/resources",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.gmail.shaltynovm.project2.Main" />
+      <module name="IslandProjectMaven" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.gmail.shaltynovm.project2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -39,7 +101,41 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1675615591538</updated>
+      <workItem from="1675615592722" duration="478000" />
     </task>
+    <task id="LOCAL-00001" summary="Initial commit">
+      <created>1675615638219</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1675615638219</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Initial commit">
+      <created>1675615836991</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1675615836991</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Initial commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial commit" />
   </component>
 </project>

@@ -1,0 +1,17 @@
+    Chance to appear MoveSpeed MaxEnergy DailyEnergy GivenEnergyIfEaten maxAnimalsINPErCell
+bear        5          2           100         5           100                  5
+snake       10          1           20          1           20                  30
+boar        25          2           60          5           80                  50
+buffalo     25          3           80          5           100                 10
+caterpillar 25          0           5           1           5                   1000
+deer        50          4           70          5           70                  20
+duck        99          4           30          2           20                  200
+eagle       25          3           50          4           20                  20
+fox         30          2           50          4           40                  30
+goat        50          3           60          5           60                  140
+horse       40          4           80          5           100                 20
+mouse       50          1           10          1           5                   500
+grass      100          0           1           1           5                   200
+rabbit      70          2           20          2           20                  150
+sheep       60          3           60          5           50                  140
+wolf        25          3           80          5           50                  30
