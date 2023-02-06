@@ -35,7 +35,6 @@ public abstract class Animal {
     }
 
     public void move(int distance) {
-        //System.out.println("Animal " + this + getIcon() + " started moving. Current position " + getPosition() + " distance: " + distance + " Energy: " + getEnergyCapacity());
         Random moveDecider = new Random();
         for (int i = 0; i < distance; i++) {
             boolean moveDecision = moveDecider.nextBoolean();
@@ -43,10 +42,8 @@ public abstract class Animal {
                 //System.out.print(getIcon() + "Animal will move to other cell");
                 moveToOtherCell();
             } else {
-                //System.out.println(getIcon() + "Animal decided to stay here " + getPosition());
             }
         }
-        //System.out.println("Animal finished moving " + getPosition());
     }
 
     private void moveToOtherCell() {
@@ -139,18 +136,16 @@ public abstract class Animal {
     }
 
     private boolean findVictim(List<Animal> animalsInCell) {
+        for (Animal actualAnimal : animalsInCell) {
         for (Map.Entry eatableAnimal : getChanceToEatList().entrySet()) {
-            for (Animal actualAnimal : animalsInCell) {
                 if (actualAnimal.toString().equals(eatableAnimal.getKey().toString())) {
                     if (calculateChance(Integer.parseInt(eatableAnimal.getValue().toString()))) {
                         swallow(this);
-                        //System.out.println("Animal " + getIcon() + " has ate " + actualAnimal.getIcon());
                         if (!actualAnimal.getClass().equals(Grass.class)) {
                             fieldInitialization.getGameRender().addEatenAnimals(actualAnimal);
                             Cell findPosition = actualAnimal.getPosition();
                             findPosition.removeAnimal(actualAnimal);
                             growGrass(findPosition);
-                            //System.out.println("❌\uD83D\uDC80  " + actualAnimal.getIcon() + actualAnimal + " was eaten by " + getIcon() + " Position " + getPosition()+"Energy "+this.getEnergyCapacity());
                         }
                         return true;
                     }
