@@ -21,7 +21,7 @@ FieldInitialization fieldInitialization;
         int returnNumber = 0;
         BufferedReader br = null;
         try {
-            br = new BufferedReader(new FileReader("src/resources/animalBase.txt"));
+            br = new BufferedReader(new FileReader("src/main/resources/animalBase.txt"));
         } catch (FileNotFoundException e) {
             throw new RuntimeException(e);
         }
